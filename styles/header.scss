@@ -1,0 +1,75 @@
+@import "main.scss";
+
+header {
+    width: 100%;
+    min-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-family: Michroma;
+    &__container{
+    display: flex;
+    width: 100%;
+    min-width: 1200px;
+    }
+    &__menu {
+    display: flex; 
+    justify-content: space-between;
+    }
+}
+
+
+
+ .menu {
+        display: flex;
+        &_navigation{
+            min-width: 1200px;
+        display: flex;
+        align-items: flex-end;
+        }
+        &__logo {
+        flex: 1 1 auto;
+        width: 70px;
+        height: 19.3px;
+        }
+        &__body {
+         margin-right: 30px;
+        }
+        &__list {
+        display: flex;
+        -moz-column-gap: 25px;
+         column-gap: 25px;
+        list-style: none;
+        
+        }
+        &__link {
+        font-size: 24;
+        font-style: bold;
+        color: $white;
+        text-decoration: none;
+        }
+        &__link:hover {
+        color: $pink;
+        }
+    }
+  
+  .logo_link{
+    font-size: 25px;
+    margin-top: 5px;
+  }  
+.logo:link{
+    text-decoration: none;
+    color: $white;
+    }
+ .logo:hover{
+    text-decoration: none;
+    color:$pink ;
+ }
+ .logo:visited{
+    text-decoration: none;
+    color:$white ;
+ }
+ .logo:active{
+    text-decoration: none;
+    color:$pink;
+ }
+ 

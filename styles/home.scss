@@ -1,0 +1,148 @@
+@import 'main.scss';
+@import 'header.scss';
+@import 'footer.scss';
+
+
+  .container_main{
+    display: grid;
+    align-items: center;
+    min-width: 1200px;
+    width: 100%;
+    overflow: hidden; 
+    max-height: 750px;
+    height: 100%;
+    gap: 10px;
+    grid-template-rows:(5, 150px);
+    grid-template-columns: (9, 120px);
+    gap: 5px;
+    padding-top: 100px;
+  &-img{
+    width: 100%;
+    display: grid;
+    grid-row: 1/4;
+    grid-column: 3/5;
+  } 
+  &_text{
+    display: grid;
+    grid-row: 1/4;
+    grid-column:5/9;
+    max-width: 400px;
+    font-family: 'Michroma';
+    font-style: normal;
+    font-size: 24px;
+    line-height: 75px;
+    text-transform: uppercase;
+    color: $pink;
+    &-model{
+        font-size: 55px;
+        color: $white;
+        text-shadow: 3px 2px 0px $pink;
+        text-transform: uppercase;
+        line-height: 20px;
+    }
+  }
+}
+
+.main-img{
+    width: 550px;
+    height: 600px;
+}
+
+  .loader1 {
+	display: grid;
+	grid-row: 5/6;
+	grid-column: 3/5;
+    position: absolute;
+     margin-top: 50px;
+}
+
+#wave {
+	height: 350px;
+	width: 500px;
+	fill: $pink;
+    stroke: $black;
+    stroke-width: 0.5px;
+}
+
+@for $i from 1 through 9 {
+	#Line_#{$i} {
+		animation: pulse 1s infinite;
+		animation-delay: $i * .15s;
+	}
+}
+
+@keyframes pulse {
+	0% {
+		transform: scaleY(1);
+		transform-origin: 50% 50%;
+	}
+	
+	50% {
+		transform: scaleY(.7);
+		transform-origin: 50% 50%;
+	}
+	
+	100% {
+		transform: scaleY(1);
+		transform-origin: 50% 50%;
+	}
+}
+
+.container_features{
+   padding-top: 30px;
+    &_grid{ 
+    max-width: 1200px;
+    width: 100%;
+    font-family: $font;
+    font-size: 28px;
+    line-height: 55px;
+    color: $white;
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    gap: 50px;
+    justify-content: center;
+}
+}
+
+.item_1{
+display: inline-block;
+max-width: 350px;
+width: 100%;
+height: 165px;
+}
+
+.item_2{
+display: inline-block;
+max-width: 350px;
+width: 100%;
+height: 165px;
+}
+
+.item_3{
+display: inline-block;
+max-width: 300px;
+width: 100%;
+height: 165px;
+}
+
+.container_features_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+.button_main{
+    justify-content: center;
+    border: none;
+    min-width: 195px;
+    min-height: 55px;
+    background-color: $pink;
+    font-family: $font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 55px;
+    letter-spacing: 0.05em;
+    color: $black;
+}
