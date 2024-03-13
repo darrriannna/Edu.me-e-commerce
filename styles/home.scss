@@ -4,18 +4,54 @@
 
 
   .container_main{
-    display: grid;
+    display: flex;
     align-items: center;
-    min-width: 1200px;
+    flex: auto;
+    margin: auto;
+    max-width: 1200px;
     width: 100%;
     overflow: hidden; 
     max-height: 750px;
     height: 100%;
     gap: 10px;
+    @media screen and (max-width: 400px) {
+      display: flex;
+      max-width: 320px;
+      max-height: 900px;
+      flex-direction: column;
+      flex: auto;
+      margin: auto;
+      justify-content: center;
+       } 
+       @media screen and (max-width: 650px) {
+        display: flex;
+        max-width: 500px;
+        max-height: 900px;
+        flex-direction: column;
+        flex: auto;
+        margin: auto;
+        justify-content: center;
+         } 
+         @media screen and (max-width: 800px) {
+          display: flex;
+          max-width: 500px;
+          max-height: 1200px;
+          flex-direction: column;
+          flex: auto;
+          margin: auto;
+          justify-content: center;
+           } 
+    &_animation{
+      display: grid;
     grid-template-rows:(5, 150px);
     grid-template-columns: (9, 120px);
     gap: 5px;
     padding-top: 100px;
+    @media screen and (max-width: 400px) {
+      display: grid;
+      grid-template-rows:(5, 150px);
+      grid-template-columns: (1, 320px);
+       } }
   &-img{
     width: 100%;
     display: grid;
@@ -23,29 +59,60 @@
     grid-column: 3/5;
   } 
   &_text{
-    display: grid;
-    grid-row: 1/4;
-    grid-column:5/9;
+    display: flex;
+    flex-direction: column;
     max-width: 400px;
     font-family: 'Michroma';
     font-style: normal;
     font-size: 24px;
     line-height: 75px;
     text-transform: uppercase;
-    color: $pink;
+    color: $pink; 
+    @media screen and (max-width: 400px) {
+      font-size: 10px;
+      text-align: center;
+       } 
+       @media screen and (max-width: 650px) {
+        font-size: 18px;
+        text-align: center;
+         }
+         @media screen and (max-width: 800px) {
+          font-size: 20px;
+          margin: auto;
+           }
     &-model{
         font-size: 55px;
         color: $white;
         text-shadow: 3px 2px 0px $pink;
         text-transform: uppercase;
         line-height: 20px;
+        @media screen and (max-width: 400px) {
+          font-size: 35px;
+           } 
+           @media screen and (max-width: 650px) {
+            font-size: 40px;
+            text-align: center;
+             } 
+             @media screen and (max-width: 800px) {
+              font-size: 45px;
+              margin: auto;
+               }
     }
+  } 
   }
-}
+
 
 .main-img{
     width: 550px;
     height: 600px;
+    @media screen and (max-width: 400px) {
+      max-width: 380px;
+      max-height: 420px;
+       } 
+       @media screen and (max-width: 650px) {
+        max-width: 380px;
+        max-height: 420px;
+         } 
 }
 
   .loader1 {
@@ -62,6 +129,14 @@
 	fill: $pink;
     stroke: $black;
     stroke-width: 0.5px;
+    @media screen and (max-width: 400px) {
+      max-height: 250px;
+      max-width: 360px;
+       } 
+       @media screen and (max-width: 650px) {
+        max-width: 380px;
+        max-height: 420px;
+         } 
 }
 
 @for $i from 1 through 9 {
@@ -100,8 +175,33 @@
     display: flex;
     height: 100%;
     overflow: hidden;
-    gap: 50px;
+    gap: 55px;
     justify-content: center;
+    @media screen and (max-width: 400px) {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      max-width: 320px;
+      gap: 20px;
+      font-size: 20px;
+      line-height: 30px;
+       } 
+       @media screen and (max-width: 650px) {
+        justify-content: center;
+        margin: auto;
+        max-width: 450px;
+        gap: 25px;
+        font-size: 18px;
+        line-height: 30px;
+         } 
+         @media screen and (max-width: 800px) {
+          justify-content: center;
+          margin: auto;
+          max-width: 600px;
+          gap: 40px;
+          font-size: 20px;
+          line-height: 30px;
+           } 
 }
 }
 
@@ -110,6 +210,10 @@ display: inline-block;
 max-width: 350px;
 width: 100%;
 height: 165px;
+  &:hover{
+      color: $pink;
+    }
+  
 }
 
 .item_2{
@@ -117,13 +221,19 @@ display: inline-block;
 max-width: 350px;
 width: 100%;
 height: 165px;
+&:hover{
+  color: $pink;
+}
 }
 
 .item_3{
 display: inline-block;
-max-width: 300px;
+max-width: 350px;
 width: 100%;
 height: 165px;
+&:hover{
+  color: $pink !important;
+}
 }
 
 .container_features_button{
@@ -145,4 +255,11 @@ height: 165px;
     line-height: 55px;
     letter-spacing: 0.05em;
     color: $black;
+  &:hover{
+    background-color: rgba(20, 19, 19, 0.433) !important;
+    color: $white;
+    text-decoration: underline;
+    transition-duration: 1s;
+    transition-delay: 0,3s;
+  }
 }
