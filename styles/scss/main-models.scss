@@ -8,9 +8,9 @@ $font: Michroma;
     margin: 0;
 }
 
-body{
+body {
     background-color: $black;
-    overflow-x: hidden;   
+    overflow-x: hidden;
 }
 
 .main_gallery_container {
@@ -19,7 +19,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
 }
 
 .panel {
@@ -31,6 +31,7 @@ body{
     margin-top: 50px;
     margin-left: 50px;
     padding-right: 50px;
+
     h3 {
         color: $white;
         text-shadow: 5px 4px 4px rgba(211, 166, 194, 0.56);
@@ -38,32 +39,38 @@ body{
         font-size: 34px;
         font-style: normal;
         font-weight: 400;
-        line-height: 40px; /* 108.333% */
+        line-height: 40px;
+        /* 108.333% */
         padding-left: 5rem;
         margin-bottom: 3rem;
-        
+
     }
+
     h4 {
         color: $pink;
         font-family: $font;
         font-size: 20px;
         font-style: normal;
         font-weight: 400;
-        line-height: 40px; /* 171.875% */
+        line-height: 40px;
+        /* 171.875% */
         letter-spacing: 2.24px;
         padding-left: 5rem;
         margin-bottom: 3rem;
     }
+
     p {
         color: $white;
         font-family: 'Metrophobic';
         font-size: 24px;
         font-style: normal;
         font-weight: 400;
-        line-height: 50px; /* 171.875% */
+        line-height: 50px;
+        /* 171.875% */
         padding-left: 5rem;
     }
 }
+
 .panel_image {
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -71,8 +78,9 @@ body{
 
 .panel_text {
     margin-top: 2.5rem;
-    width: 100%; 
+    width: 100%;
 }
+
 .main-title {
     color: $pink;
     text-shadow: 6px 3px 4px #988080;
@@ -80,16 +88,20 @@ body{
     font-size: 28px;
     font-style: normal;
     font-weight: 400;
-    line-height: 55px; /* 85.938% */
+    line-height: 55px;
+    /* 85.938% */
 }
+
 .gallery_grid {
     column-count: 3;
     column-gap: 20px;
     width: 100%;
+
     & img {
-        display: inline-block;    
-    }  
-} 
+        display: inline-block;
+    }
+}
+
 figcaption {
     display: inline-block;
     color: $white;
@@ -98,26 +110,29 @@ figcaption {
     font-size: 28px;
     font-style: normal;
     font-weight: 400;
-    line-height: 40px; /* 171.875% */
-    margin-left: 5rem; 
+    line-height: 40px;
+    /* 171.875% */
+    margin-left: 5rem;
+
     a {
         text-decoration: none;
-        color:$white; 
-    }   
+        color: $white;
+    }
 }
 
 
 .babyshower {
-    padding-bottom: 3rem;   
+    padding-bottom: 3rem;
 }
 
-.container_features_button{
+.container_features_button {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
-  }
-.button_main{
+}
+
+.button_main {
     justify-content: center;
     border: none;
     min-width: 195px;
@@ -130,11 +145,12 @@ figcaption {
     line-height: 55px;
     letter-spacing: 0.05em;
     color: $black;
-  &:hover{
-    background-color: rgba(20, 19, 19, 0.433) !important;
-    color: $white;
-    text-decoration: underline;
-    transition-duration: 1s;
-    transition-delay: 0,3s;
-  }
+
+    &:hover {
+        background-color: rgba(20, 19, 19, 0.433) !important;
+        color: $white;
+        text-decoration: underline;
+        transition-duration: 1s;
+        transition-delay: 0, 3s;
+    }
 }
