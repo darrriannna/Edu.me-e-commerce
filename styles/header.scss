@@ -1,90 +1,84 @@
-@import "main.scss";
+@import 'main-models';
 
 header {
+  width: 100%;
+  min-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-family: $font;
+
+  &__container {
+    display: flex;
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    font-family: Michroma;
-    @media screen and (max-width: 650px) {
-      width: 100%;
-    display: block;
-    } 
-    @media screen and (max-width: 400px) {
-      width: 100%;
-    display: block;
-    }  
-    }
+    min-width: 1200px;
+  }
 
+  &__menu {
+    display: flex;
+    justify-content: space-between;
 
+  }
+}
 
- .menu {
-        &_navigation{ 
-         display: flex;
-         justify-content: space-between;
-         align-items: center;
-         flex-direction: row;
-         @media screen and (max-width: 650px) {
-          max-width: 500px;
-          display: flex;
-          flex: auto;
+.menu {
+  display: flex;
 
-          } 
-          @media screen and (max-width: 400px) {
-         max-width: 360px;
-          display: flex;
-          flex: auto;
-          }  
-        }
-        &__list {
-         padding-top: 20px;
-         display: flex;
-         justify-content: space-between;
-         flex-direction: row;
-         list-style: none;
-        }
-        &__link {
-         padding: 20px;
-        font-size: 20px;
-        font-style: bold;
-        color: $white;
-        text-decoration: none;
-        @media screen and (max-width: 400px) {
-         font-size: 14px;
-          } 
-        }
-        &__link:hover {
-        color: $pink;
-        transition-duration: 0.5s !important;
-         transition-delay: 0.3s !important;
-        }
-    }
-  
-  .logo_link{
-   width: 70px;
-   height: 19.3px;
-    font-size: 25px;
-    margin-top: 5px;
-    @media screen and (max-width: 400px) {
-      font-size: 18px;
-       } 
-  }  
-.logo:link{
-    text-decoration: none;
+  &_navigation {
+    min-width: 1200px;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__logo {
+    flex: 1 1 auto;
+    width: 70px;
+    height: 19.3px;
+  }
+
+  &__body {
+    margin-right: 30px;
+  }
+
+  &__list {
+    display: flex;
+    -moz-column-gap: 25px;
+    column-gap: 25px;
+    list-style: none;
+  }
+
+  &__link {
+    font-size: 24;
+    font-style: bold;
     color: $white;
-    }
- .logo:hover{
     text-decoration: none;
-    color:$pink !important;
-    transition-duration: 0.5s !important;
-    transition-delay: 0.3s !important;
- }
- .logo:visited{
-    text-decoration: none;
-    color:$white ;
- }
- .logo:active{
-    text-decoration: none;
-    color:$pink;
- }
- 
+  }
+
+  &__link:hover {
+    color: $pink;
+  }
+}
+
+.logo_link {
+  font-size: 25px;
+  margin-top: 5px;
+}
+
+.logo:link {
+  text-decoration: none;
+  color: $white;
+}
+
+.logo:hover {
+  text-decoration: none;
+  color: $pink ;
+}
+
+.logo:visited {
+  text-decoration: none;
+  color: $white ;
+}
+
+.logo:active {
+  text-decoration: none;
+  color: $pink;
+}
