@@ -69,6 +69,16 @@ body {
   width: 100%;
 }
 
+.main-title {
+  color: #D3A6C2;
+  text-shadow: 6px 3px 4px #988080;
+  font-family: Michroma;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 55px; /* 85.938% */
+}
+
 header {
   width: 100%;
   min-width: 1200px;
@@ -214,6 +224,16 @@ body {
   width: 100%;
 }
 
+.main-title {
+  color: #D3A6C2;
+  text-shadow: 6px 3px 4px #988080;
+  font-family: Michroma;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 55px; /* 85.938% */
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -352,4 +372,14 @@ body {
 .panel_text {
   margin-top: 2.5rem;
   width: 100%;
+}
+
+.main-title {
+  color: #D3A6C2;
+  text-shadow: 6px 3px 4px #988080;
+  font-family: Michroma;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 55px; /* 85.938% */
 }
