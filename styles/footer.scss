@@ -42,3 +42,29 @@
         }
     }
 }
+
+.container_footer_signup {
+    display: flex;
+    min-width: 1200px;
+    width: 100%;
+    justify-content: end;
+    &-text{
+        font-family: 'Metrophobic';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 35px;
+        color: #D3A6C2;
+    }
+}
+
+.button {
+    background: #D3A6C2;
+    border-radius: 45px;
+    font-family: 'Metrophobic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
