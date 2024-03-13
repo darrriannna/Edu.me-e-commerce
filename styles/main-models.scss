@@ -106,10 +106,17 @@ figcaption {
     }   
 }
 
+
 .babyshower {
     padding-bottom: 3rem;   
 }
 
+.container_features_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
 .button_main{
     justify-content: center;
     border: none;
@@ -123,5 +130,11 @@ figcaption {
     line-height: 55px;
     letter-spacing: 0.05em;
     color: $black;
-    margin-top: 3rem;
+  &:hover{
+    background-color: rgba(20, 19, 19, 0.433) !important;
+    color: $white;
+    text-decoration: underline;
+    transition-duration: 1s;
+    transition-delay: 0,3s;
+  }
 }
