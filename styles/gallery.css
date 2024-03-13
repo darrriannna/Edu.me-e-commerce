@@ -71,3 +71,46 @@ header__menu {
   text-decoration: none;
   color: #D3A6C2;
 }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 1200px;
+  margin-top: 50px;
+  min-height: 173px;
+  height: 100%;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.footer__item {
+  padding: 10px;
+}
+.footer__link {
+  font-family: "Metrophobic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 55px;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+}
+.footer__link:link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.footer__link:hover {
+  text-decoration: none;
+  color: #D3A6C2;
+}
+.footer__link:visited {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.footer__link:active {
+  text-decoration: none;
+  color: #D3A6C2;
+}
