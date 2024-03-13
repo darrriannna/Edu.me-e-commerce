@@ -59,6 +59,16 @@ body {
   padding-left: 5rem;
 }
 
+.panel_image {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.panel_text {
+  margin-top: 2.5rem;
+  width: 100%;
+}
+
 header {
   width: 100%;
   min-width: 1200px;
@@ -194,6 +204,16 @@ body {
   padding-left: 5rem;
 }
 
+.panel_image {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.panel_text {
+  margin-top: 2.5rem;
+  width: 100%;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -322,4 +342,14 @@ body {
   font-weight: 400;
   line-height: 50px; /* 171.875% */
   padding-left: 5rem;
+}
+
+.panel_image {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.panel_text {
+  margin-top: 2.5rem;
+  width: 100%;
 }
