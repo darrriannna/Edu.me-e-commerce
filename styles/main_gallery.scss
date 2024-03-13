@@ -109,3 +109,19 @@ figcaption {
 .babyshower {
     padding-bottom: 3rem;   
 }
+
+.button_main{
+    justify-content: center;
+    border: none;
+    min-width: 195px;
+    min-height: 55px;
+    background-color: $pink;
+    font-family: $font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 55px;
+    letter-spacing: 0.05em;
+    color: $black;
+    margin-top: 3rem;
+}

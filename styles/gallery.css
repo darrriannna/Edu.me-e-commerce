@@ -108,6 +108,22 @@ figcaption a {
   padding-bottom: 3rem;
 }
 
+.button_main {
+  justify-content: center;
+  border: none;
+  min-width: 195px;
+  min-height: 55px;
+  background-color: #D3A6C2;
+  font-family: Michroma;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 55px;
+  letter-spacing: 0.05em;
+  color: #111111;
+  margin-top: 3rem;
+}
+
 header {
   width: 100%;
   min-width: 1200px;
@@ -292,6 +308,22 @@ figcaption a {
   padding-bottom: 3rem;
 }
 
+.button_main {
+  justify-content: center;
+  border: none;
+  min-width: 195px;
+  min-height: 55px;
+  background-color: #D3A6C2;
+  font-family: Michroma;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 55px;
+  letter-spacing: 0.05em;
+  color: #111111;
+  margin-top: 3rem;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -469,4 +501,20 @@ figcaption a {
 
 .babyshower {
   padding-bottom: 3rem;
+}
+
+.button_main {
+  justify-content: center;
+  border: none;
+  min-width: 195px;
+  min-height: 55px;
+  background-color: #D3A6C2;
+  font-family: Michroma;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 55px;
+  letter-spacing: 0.05em;
+  color: #111111;
+  margin-top: 3rem;
 }
